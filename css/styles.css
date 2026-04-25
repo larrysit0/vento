@@ -1,0 +1,54 @@
+/* RESET Y GENERALES */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background-color: #fff; color: #333; overflow-x: hidden; }
+
+/* PORTADA HERO */
+.hero { position: relative; width: 100vw; height: 100vh; display: flex; align-items: center; overflow: hidden; }
+.hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center right; z-index: 1; }
+.shadow-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, #050a18 35%, transparent 85%); z-index: 2; }
+
+.main-header { position: absolute; top: 0; width: 100%; z-index: 10; padding: 30px 50px; }
+.header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.logo { color: white; font-family: 'Montserrat'; font-weight: 800; font-size: 1.6rem; }
+nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; }
+
+.btn-verde { background: #00d166; border: none; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; cursor: pointer; }
+.btn-ingresar { background: transparent; border: 1px solid #fff; color: white; padding: 10px 20px; border-radius: 5px; margin-right: 10px; cursor: pointer; }
+
+.hero-text { position: relative; z-index: 3; color: white; padding-left: 10%; max-width: 800px; }
+.hero-text h1 { font-family: 'Montserrat'; font-size: 4rem; line-height: 1.1; margin-bottom: 20px; font-weight: 800; }
+.hero-text h1 span { color: #00d166; font-style: italic; font-weight: 400; }
+.btn-verde-grande { background: #00d166; border: none; color: white; padding: 18px 40px; border-radius: 6px; font-weight: 800; font-size: 1rem; cursor: pointer; margin-right: 20px; transition: 0.3s; }
+.btn-verde-grande:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+/* SECCIÓN PILARES */
+.pilares { padding: 100px 10%; text-align: center; background-color: #f9f9f9; }
+.section-title { font-family: 'Montserrat'; font-size: 2rem; margin-bottom: 50px; letter-spacing: 2px; }
+.pilares-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.pilar-card { background: white; padding: 40px 20px; border-radius: 15px; width: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+.pilar-card:hover { transform: translateY(-10px); }
+.icon { font-size: 40px; margin-bottom: 20px; }
+.pilar-card h3 { font-size: 1rem; margin-bottom: 10px; color: #1e3a8a; }
+.pilar-card p { font-size: 0.8rem; color: #777; margin-bottom: 20px; }
+.pilar-card a { text-decoration: none; font-weight: bold; font-size: 0.75rem; color: #2962ff; }
+
+/* SECCIÓN EVENTOS */
+.eventos { padding: 80px 10%; text-align: center; }
+.eventos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.event-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: left; }
+.event-card img { width: 100%; height: 180px; object-fit: cover; }
+.event-info { padding: 20px; }
+.event-info h4 { margin-bottom: 10px; font-size: 1rem; }
+.event-info p { font-size: 0.85rem; color: #666; margin-bottom: 5px; }
+.btn-mini-outline { width: 100%; background: transparent; border: 1px solid #ddd; padding: 10px; margin-top: 15px; border-radius: 5px; cursor: pointer; }
+
+/* BANNER FINAL */
+.final-banner { padding: 60px 10%; }
+.banner-box { background: linear-gradient(135deg, #050a18, #1a365d); border-radius: 20px; padding: 60px; color: white; display: flex; justify-content: space-between; align-items: center; }
+.banner-box h2 { font-family: 'Montserrat'; font-size: 2.2rem; line-height: 1.2; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-text h1 { font-size: 2.5rem; }
+  .banner-box { flex-direction: column; text-align: center; gap: 30px; }
+}
